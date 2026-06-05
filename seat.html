@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电影在线购票系统 - 选座</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="seat-page">
+    <header class="page-header">
+        <h1>电影选座</h1>
+    </header>
+
+    <main class="seat-container">
+        <section class="movie-info">
+            <div class="poster-card" aria-label="囧妈电影海报">
+                <div class="poster-top">徐峥作品</div>
+                <div class="poster-title">囧妈</div>
+                <div class="poster-subtitle">Lost in Russia</div>
+            </div>
+            <div class="details">
+                <h2>囧妈 (Lost in Russia)</h2>
+                <p>导演：徐峥</p>
+                <p>主演：徐峥、黄梅莹、贾冰</p>
+                <p>片长：120 分钟</p>
+                <p>票价：<span id="ticketPrice">¥40</span> / 张</p>
+            </div>
+        </section>
+
+        <section class="seat-selector">
+            <h3>选择座位</h3>
+            <div class="screen">银幕</div>
+            <div id="seatGrid" class="seat-grid"></div>
+
+            <div class="legend">
+                <div class="legend-item"><span class="seat-icon selected"></span>已选</div>
+                <div class="legend-item"><span class="seat-icon available"></span>可选</div>
+                <div class="legend-item"><span class="seat-icon sold"></span>已售</div>
+            </div>
+
+            <div class="selection-info">
+                <p>选中座位：<span id="selectedSeats">无</span></p>
+                <p>总价：<span id="totalPrice">¥0</span></p>
+            </div>
+
+            <button id="confirmBtn" class="confirm-btn">确认订单</button>
+        </section>
+    </main>
+
+    <script src="js/seat.js"></script>
+</body>
+</html>
